@@ -10,6 +10,7 @@ Detailed system design documents for e-commerce backend scenarios using **Java 1
 | 02 | Shopping Cart System | [02-shopping-cart-system.md](./02-shopping-cart-system.md) |
 | 03 | Order Processing Pipeline | [03-order-processing-pipeline.md](./03-order-processing-pipeline.md) |
 | 04 | Flash Sale System | [04-flash-sale-system-design.md](./04-flash-sale-system-design.md) |
+| 05 | Inventory Management Across Multiple Warehouses | [05-inventory-management-across-multiple-warehouses.md](./05-inventory-management-across-multiple-warehouses.md) |
 
 ## Tech Stack
 
@@ -33,3 +34,7 @@ Detailed system design documents for e-commerce backend scenarios using **Java 1
 - Dead Letter Queue (DLQ)
 - Cache Stampede Prevention (L1 Caffeine + L2 Redis)
 - Event Sourcing / Immutable Audit Logs
+- Warehouse Selection Scoring Algorithm
+- Three-Level Inventory Model (on_hand / on_hold / available)
+- Reconciliation with Auto-Approve Thresholds
+- CDC (Debezium) for analytics pipeline sync
